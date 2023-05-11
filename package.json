@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-    "sass:watch": "sass --watch scss:css scss1:index1.css scss2:index2.css scss3:index3.css scss4:index4.css"
-  },
+    "sass:watch": "sass --watch scss/scss1/index1.scss css/scss1/index1.css && sass --watch scss/scss2/index2.scss css/scss2/index2.css && sass --watch scss/scss3/index3.scss css/scss3/index3.css && sass --watch scss/scss4/index4.scss css/scss4/index4.css"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -1,0 +1,438 @@
+// url
+$body-bg: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+
+// colors
+$mainColor: blueviolet;
+$secondaryColor: blue;
+$tertiaryColor: violet;
+$fourColor: coral;
+$fiveColor: rebeccapurple;
+$sixColor: black;
+$eightColor: cornflowerblue;
+$nineColor: white;
+$tenColor: rgba(255, 0, 0, 0);
+$elevenColor: grey;
+
+// fonts
+$mainFont: 'Roboto Mono', monospace;
+
+// font weight
+$fontLight: 100;
+$fontBold: 700;
+$fontRegular: 500;
+$fontMedium: 300;
+$fontHalfMedium: 400;
+$fontAlmostLight: 200;
+$fontMini: 14px;
+$fontMinitwo: 15px;
+
+// positions
+$display-flex: flex;
+$display-block: block;
+$display-grid: grid;
+$display-none: none;
+$display-inline-bock: inline-block;
+$flex-direction-row: row;
+$flex-flow-row: row;
+$flex-wrap-wrap: wrap;
+$align-items-center: center;
+$justify-content-center: center;
+$align-content-center: center;
+$justify-items-center: center;
+$margin-left-auto: auto;
+$margin-right-auto: auto;
+$justify-content-left: left;
+$left: left;
+$text-align-center: center;
+$miniMargin: 0 auto;
+$mini-line-height: 1.6;
+$hidden-overflow-x: hidden;
+$cover-object-fit: cover;
+$column: column;
+$wrap: wrap;
+$row: 4;
+$text-align-justify: justify;
+$medium-grid-template-columns: 50px;
+$medium-grid-template-rows: 50px;
+$grid-gap: 10px;
+$miniGap: 10px;
+$grid-template-columns: 400px;
+$grid-template-rows: 1px;
+$body-fit: cover;
+$body-pos: bottom;
+$body-attachment: fixed;
+$twobody-pos: center;
+$body-image: fixed;
+$threebody-poss: contain;
+$middle: middle;
+
+// size
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$largeWidth: 700px;
+$largeWidthtwo: 400px;
+$mediumWidth: 600px;
+$smallWidth: 200px;
+$smallHeight: 200px;
+$miniHeight: 100px;
+$miniHeighttwo: 85px;
+$littleMargin: 0;
+$mediumPadding: 10px;
+$box-sizing-border-box: border-box;
+$both: both;
+$smallMargin-top: 20px;
+$miniMargin: 10;
+$complete-max-width: 100%;
+$mini-margin-top: 10px;
+$mini-padding-left: 25px;
+$completeWidth: 100%;
+$text-right: right;
+$margin-bottom: 0;
+$margin-right: 5px;
+$margin-bottom-container: 20px;
+$body-width: 100%;
+$body-height: 300px;
+$body-size: cover;
+
+// customs
+$solid: solid;
+$miniBorder: 10px;
+$body-repeat: no-repeat;
+$list-style: none;
+
+body {
+    background-image: $body-bg;
+    width: $body-width;
+    height: $body-height;
+    object-fit: $body-fit;
+    object-position: $body-pos;
+    background-repeat: $body-repeat;
+    background-attachment: $body-attachment;
+    background-size: $body-size;
+}
+
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $fontBold;
+    color: $mainColor;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-weight: $fontRegular;
+    color: $secondaryColor;
+}
+
+h3 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+h5 {
+    font-family: $mainFont;
+    font-weight: $fontMedium;
+}
+
+h6 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+
+.frases {
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+}
+
+.números{
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+    color: $tertiaryColor;
+}
+
+.peliculas {
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+}
+
+.frases2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.números2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+    color: $fourColor;
+}
+
+.redes {
+    color: $fiveColor;
+}
+
+.acount {
+    color: $sixColor;
+ }
+
+ .centro{
+    vertical-align: $middle;
+}
+
+.box-model {
+    margin: $largeMargin;
+    padding: $largePadding;
+    border: $miniBorder $solid $tenColor;
+    text-align: $text-align-justify;
+}
+
+.alineación {
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    flex-flow: $flex-flow-row;
+    flex-wrap: $flex-wrap-wrap;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+}
+
+    .alineación figcaption {
+        color: $eightColor;
+    }
+
+.iyt {
+    vertical-align: middle;
+}
+
+footer {
+display: $display-block;
+justify-content: $justify-content-center;
+}
+
+#header {
+    margin: auto;
+    width: $fontRegular;
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+ul {
+    list-style: $list-style;
+}
+
+.grid-container {
+    display: $display-grid;
+    grid-template-columns: $medium-grid-template-columns; /* 2 columnas */
+    grid-template-rows: $medium-grid-template-rows; /* 2 filas */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+    /* Centrar items */
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
+}
+
+.grid-container2 {
+    display: $display-grid;
+    grid-template-columns: $grid-template-columns; /* 1 columna */
+    grid-template-rows: $grid-template-rows; /*1 fila */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+    /* Centrar items */
+    margin-left: $margin-left-auto;
+    margin-right: $margin-right-auto;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
+}
+
+.union {
+    display: $display-flex;
+    justify-content: $justify-content-left;
+}
+
+.caja-1 {
+    background-color: $elevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-2 {
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-3 {
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-4 {
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-5 {
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: $body-bg;
+        background-size: $body-size;
+        background-repeat: $body-repeat;
+        background-attachment: $body-attachment;
+    }
+
+    .imagenfrases {
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        background-position: center;
+        background-attachment: fixed;
+        width: $smallWidth;
+        height: $miniHeight;
+        margin: $miniMargin;
+    }
+
+    .titulo {
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        font-weight: $fontAlmostLight;
+    }
+
+    .subtitulo {
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        font-weight: $fontLight;
+    }
+
+    div.union img.derecha {
+        height: $smallHeight;
+        width: $smallWidth;
+        display: $display-inline-bock;
+    }
+
+    .frases {
+        display: $display-inline-bock;
+        line-height: $mini-line-height;
+        max-width: $complete-max-width;
+        overflow-x: $hidden-overflow-x;
+        object-fit: $cover-object-fit;
+        width: $largeWidthtwo;
+        height: $miniHeighttwo;
+        margin: $miniMargin;
+        margin-top: $mini-margin-top;
+        padding-left: $mini-padding-left;
+        font-size: $fontMini;
+        padding: $mediumPadding;
+        font-weight: $fontLight;
+    }
+
+    .union {
+        flex-direction: $column;
+        flex-wrap: $wrap;
+    }
+
+    .union > h3 {
+        width: $completeWidth;
+      }
+      .contenedorfrases {
+        width: $completeWidth;
+      }
+      .contenedorfrases .frasescontainer {
+        display: $display-flex;
+        flex-direction: $column;
+        align-items: $align-items-center;
+      }
+      .contenedorfrases .frasescontainer h3 {
+        text-align: $text-right;
+        margin-bottom: $margin-bottom;
+      }
+      .contenedorfrases .frasescontainer .números {
+        margin-right: $margin-right;
+      }
+
+    .contenedorfrases {
+        margin-bottom: $margin-bottom-container;
+    }
+
+    .nota {
+        margin: $littleMargin;
+    }
+
+    .iyt {
+        grid-row: $row;
+    }
+}
+
+/* Estilos para dispositivos desktop */
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-image: $body-bg;
+        background-position: $twobody-pos;
+        background-image: $body-image;
+        background-repeat: $body-repeat;
+        background-position: $threebody-poss;
+    }
+
+    .union {
+        display: $display-flex;
+        justify-content: $justify-content-left;
+    }
+
+    .contenedorfrases {
+        display: $display-flex;
+        flex-direction: $column;
+    }
+    
+    .frases {
+        float: $left;
+        clear: $left;
+        font-size: $fontMinitwo;
+    }
+
+    .peliculas {
+        font-size: $fontMinitwo;
+    }
+
+    .frases2 {
+        font-size: $fontMinitwo;
+    }
+}

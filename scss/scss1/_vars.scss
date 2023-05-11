@@ -1,0 +1,119 @@
+// url
+$body-bg: url(https://i.pinimg.com/564x/f8/f5/94/f8f5949eac79c86f399384b3aebe046f.jpg);
+
+// colors
+$mainColor: darkred;
+$secondaryColor: gray;
+$tertiaryColor: rebeccapurple;
+$fourColor: Black;
+$fiveColor: rgba(255, 0, 0, 0);
+
+
+// fonts
+$mainFont: 'Roboto Mono', monospace;
+
+// size
+$textSm: .8em;
+$textMd: 1em;
+$textLg: 2em;
+$textXl: 3em;
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$body-height: 100vh;
+
+// font weight
+$fontLight: 100;
+$fontBold: 700;
+$fontRegular: 500;
+
+// position
+$display-block: block;
+$body-pos: center;
+$twobody-pos: contain;
+$threebody-pos: bottom;
+$fourbody-pos: 20px;
+$body-image: fixed;
+$body-text-align: center;
+$text-align-justify: justify;
+$middle: middle;
+$justify-content-center: center;
+
+// custom
+$body-repeat: no-repeat;
+$solid: solid;
+$miniBorder: 10px;
+
+body {
+    background-image: $body-bg;
+    background-position: $body-pos;
+    background-image: $body-image;
+    background-repeat: $body-repeat;
+    background-position: $twobody-pos;
+    text-align: $body-text-align;
+}
+
+.box-model {
+    margin: $largeMargin;
+    padding: $largePadding;
+    border: $miniBorder $solid $fiveColor;
+    text-align: $text-align-justify;
+}
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $fontBold;
+    color: $mainColor;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-weight: $fontRegular;
+    color: $secondaryColor;
+}
+
+h6 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+.redes {
+    color: $tertiaryColor;
+}
+
+.acount {
+    color: $fourColor;
+}
+
+.iyt {
+    vertical-align: $middle;
+}
+
+footer {
+    display: $display-block;
+    justify-content: $justify-content-center;
+}
+
+ /* Estilos para dispositivos móviles */
+
+ @media screen and (max-width: 400px) {
+    body {
+    background-image: $body-bg;
+    background-size: $twobody-pos;
+    background-position: $body-pos $threebody-pos $fourbody-pos;
+    height: $body-height;
+    }
+ 
+}
+
+/* Estilos para dispositivos desktop */
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-image: $body-bg;
+        background-position: $body-pos $threebody-pos $fourbody-pos;
+        background-image: $body-image;
+        background-repeat: $body-repeat;
+        background-position: $twobody-pos;
+        text-align: $body-text-align;
+        }
+}

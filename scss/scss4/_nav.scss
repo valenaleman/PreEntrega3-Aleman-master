@@ -1,0 +1,68 @@
+// dcoration
+$ceroColor: transparent !important;
+$noDecoration: none;
+
+// font width
+$fontRegular: 500px;
+
+// color
+$mainColor: #434343;
+$secondaryColor: white;
+$tertiaryColor: black;
+$fourColor: lightcoral;
+$fiveColor: lightgray;
+
+// size
+$mediumPadding: 10px 15px;
+$smallPading: 5px;
+
+// position
+$display-block: block;
+$display-none: none;
+$left: left;
+$absolute: absolute;
+$width: 140px;
+
+.navbar{
+    background-color: transparent $ceroColor;
+}
+
+.nav li a:hover {
+    background-color: $mainColor;
+}
+
+.nav li a {
+    background-color: $secondaryColor;
+    color: $tertiaryColor;
+    width: $fontRegular;
+    text-decoration: $display-none;
+    padding: $mediumPadding;
+    display: $display-block;
+}
+
+.nav > li {
+    float: $left;
+}
+
+.nav li ul {
+    display: $display-none;
+    position: $absolute;
+    min-width: $width;
+}
+
+.nav li:hover > ul {
+    display: $display-block;
+}
+
+.nav li ul li:first-child a.menu-link {
+    background-color: $fourColor;
+    color: $secondaryColor;
+    padding: $smallPading;
+    display: $display-block;
+}
+
+.nav li ul li:nth-child(4) a.orden-link {
+    background-color: $fiveColor;
+    padding: $smallPading;
+    display: $display-block;
+}

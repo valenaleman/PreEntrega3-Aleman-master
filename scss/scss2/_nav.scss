@@ -1,0 +1,70 @@
+// decoration
+$mainColor: transparent !important;
+$noDecoration: none;
+
+// colors
+$oneColor: lightcoral;
+$twoColor: white;
+$threeColor: lightgray;
+$fourColor: #434343;
+$fiveColor: white;
+$sixColor: black;
+$sevenColor: grey;
+
+// font width
+$fontRegular: 500px;
+
+// size
+$mediumPadding: 10px 15px;
+$smallPading: 5px;
+
+// position
+$display-block: block;
+$display-none: none;
+$left: left;
+$absolute: absolute;
+$width: 140px;
+
+.navbar{
+    background-color: $mainColor;
+}
+
+.nav li a {
+    background-color: $fiveColor;
+    color: $sixColor;
+    width: $fontRegular;
+    text-decoration: $noDecoration;
+    padding: $mediumPadding;
+    display: $display-block;
+}
+
+.nav > li {
+    float: $left;
+}
+
+.nav li ul {
+    display: $display-none;
+    position: $absolute;
+    min-width: $width;
+}
+
+.nav li:hover > ul {
+    display: $display-block;
+}
+
+.nav li a:hover {
+    background-color: $fourColor;
+}
+
+.nav li ul li:first-child a.menu-link {
+    background-color: $sevenColor;
+    color: $twoColor;
+    padding: $smallPading;
+    display: $display-block;
+}
+
+.nav li ul li:nth-child(2) a.frases-link {
+    background-color: $threeColor;
+    padding: $smallPading;
+    display: $display-block;
+}

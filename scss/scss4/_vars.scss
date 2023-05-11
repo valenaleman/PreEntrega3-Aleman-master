@@ -1,0 +1,365 @@
+// url
+$body-bg: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+
+// fonts
+$mainFont: 'Roboto Mono', monospace;
+
+// colors
+$mainColor: blueviolet;
+$secondaryColor: violet;
+$tertiaryColor: coral;
+$fourColor: rebeccapurple;
+$fiveColor: black;
+$sixColor: cornflowerblue;
+$sevenColor: grey;
+$eightColor: rgba(255, 0, 0, 0);
+
+// font weight
+$fontLight: 100;
+$fontBold: 700;
+$fontMedium: 300;
+$fontHalfMedium: 400;
+$fontAlmostLight: 200;
+$fontMini: 14px;
+$fontMinitwo: 15px;
+
+// position
+$display-flex: flex;
+$display-block: block;
+$display-grid: grid;
+$text-align-justify: justify;
+$flex-direction-row: row;
+$flex-flow-row: row;
+$flex-wrap-wrap: wrap;
+$align-items-center: center;
+$align-items-flex-start: flex-start;
+$justify-content-center: center;
+$middle: middle;
+$body-ob-fit: cover;
+$body-ob-pos: bottom;
+$body-attachment: fixed;
+$medium-grid-template-columns: 50px;
+$medium-grid-template-rows: 50px;
+$grid-gap: 10px;
+$miniGap: 10px;
+$align-items-center: center;
+$justify-content-center: center;
+$align-content-center: center;
+$justify-items-center: center;
+$grid-template-columns: 400px;
+$grid-template-rows: 1px;
+$left: left;
+$miniMargin: 0 auto;
+$column: column;
+$text-align-center: center;
+
+// size 
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$body-width: 100%;
+$body-height: 300px;
+$body-size: cover;
+$mediumWidthtwo: 400px;
+$largeWidth: 500px;
+$mediumWidth: 600px;
+$indMargin: auto;
+$both: both;
+$largeWidth: 700px;
+$littleMargin: 0;
+$mediumPadding: 10px;
+$box-sizing-border-box: border-box;
+$smallMargin-top: 20px;
+$body-size: cover;
+$largeHeight: 100px;
+
+// custom
+$solid: solid;
+$miniBorder: 10px;
+$body-repeat: no-repeat;
+$list-style: none;
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $fontBold;
+    color: $mainColor;
+}
+
+h5 {
+    font-family: $mainFont;
+    font-weight: $fontMedium;
+}
+
+h6 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+.frases {
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+}
+
+.números{
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+    color: $secondaryColor;
+}
+
+.peliculas {
+    font-family: $mainFont;
+    font-weight: $fontMedium;
+}
+
+.frases2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.puntos {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+    color: $tertiaryColor;
+}
+
+.tx-1 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.tx-2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.instagram {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.iyt {
+    vertical-align: $middle;
+}
+
+.redes {
+    color: $fourColor;
+}
+
+.acount {
+    color: $fiveColor;
+ }
+
+.box-model {
+    margin: $largeMargin;
+    padding: $largePadding;
+    border: $miniBorder $solid $eightColor;
+    text-align: $text-align-justify;
+}
+
+.alineación {
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    flex-flow: $flex-flow-row;
+    flex-wrap: $flex-wrap-wrap;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+}
+
+    .alineación figcaption {
+        color: $sixColor;
+    }
+
+body {
+    background-image: $body-bg;
+    width: $body-width;
+    height: $body-height;
+    object-fit: $body-ob-fit;
+    object-position: $body-ob-pos;
+    background-repeat: $body-repeat;
+    background-attachment: $body-attachment;
+    background-size: $body-size;
+}
+
+#header {
+    margin: $indMargin;
+    width: $largeWidth;
+    font-family: $mainFont; 
+    font-weight: $fontLight;
+}
+
+ul {
+    list-style: $list-style;
+}
+
+.grid-container {
+    display: $display-grid;
+    grid-template-columns: $medium-grid-template-columns; /* 2 columnas */
+    grid-template-rows: $medium-grid-template-rows; /* 2 filas */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+    /* Centrar items */
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
+}
+
+.grid-container2 {
+    display: $display-grid;
+    grid-template-columns: $grid-template-columns; /* 1 columna */
+    grid-template-rows: $grid-template-rows; /*1 fila */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+    /* Centrar items */
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
+}
+
+.caja-1 {
+    background-color: $sevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-2 {
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-3 {
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-4 {
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+  .caja-5 {
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
+  }
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background-image: $body-bg;
+        background-size: $body-size;
+        background-repeat: $body-repeat;
+        background-attachment: $body-attachment;
+    }
+
+    .containter {
+        display: $display-block;
+        display: $display-flex;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
+        width: $mediumWidthtwo;
+        height: $largeHeight;
+        margin: $miniMargin;
+        flex-direction: $column;
+        align-items: $align-items-flex-start;
+    }
+
+    .titulo {
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        font-weight: $fontAlmostLight;
+    }
+
+    .union {
+        flex-direction: $column;
+        flex-wrap: $flex-wrap-wrap;
+    }
+    
+    .frases {
+        font-size: $fontMini;
+        font-weight: $fontLight;
+    }
+
+    .peliculas{
+        font-size: $fontMini;
+        font-weight: $fontLight;
+    }
+
+    .frases2 {
+        font-size: $fontMini;
+        font-weight: $fontLight;
+    }
+}
+
+/* Estilos para dispositivos desktop */
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-image: $body-bg;
+        background-size: $body-size;
+        justify-content: $justify-content-center;
+    }
+
+    .frases {
+        font-weight: $fontLight;
+        font-size: $fontMinitwo;
+    }
+
+    .frases2 {
+        font-weight: $fontLight;
+        float: $left;
+        clear: $left;
+        font-size: $fontMinitwo;
+    }
+    .peliculas {
+        font-weight: $fontLight;
+        float: $left;
+        clear: $left;
+        font-size: $fontMinitwo;
+    }
+
+    .contenedorfrases {
+        display: $display-flex;
+        flex-direction: $column;
+    }
+
+    .union {
+        display: $display-flex;
+        justify-content: $left;
+    }
+}
